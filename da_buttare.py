@@ -4,12 +4,7 @@ Created on Sat Jan 29 13:53:16 2022
 
 @author: Fedex
 """
-
-count = 0
-s = 'yvobobbncobobboobdbqzbozombobobobobob'
-
-
-for i in range(len(s)):
-    if s[i: (i + 3)] == 'bob':
-        count += 1
-print("Number of times bob occurs is: " + str(count))
+s = 'azcbobobegghakl'
+for letter in s:
+    if letter in "obe":
+        print(letter)
