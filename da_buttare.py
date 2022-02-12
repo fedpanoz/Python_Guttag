@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 29 13:53:16 2022
+for Number in range (1, 101):
+    count = 0
+    for i in range(2, (Number//2 + 1)):
+        if(Number % i == 0):
+            count = count + 1
+            break
 
-@author: Fedex
-"""
-s = 'azcbobobegghakl'
-for letter in s:
-    if letter in "obe":
-        print(letter)
+    if (count == 0 and Number != 1):
+        print(" %d" %Number, end = '  ')
