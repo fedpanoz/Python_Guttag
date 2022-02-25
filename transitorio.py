@@ -1,14 +1,13 @@
-# Python program to display all the prime numbers within an interval
-
-#lower = 2
-#upper = 101
-#print("Prime numbers between", lower, "and", upper, "are:")
-
-for num in range(2, 101):
-   # all prime numbers are greater than 1
-   if num > 1:
-       for i in range(2, num):
-           if (num % i) == 0:
-               break
-       else:
-           print(num)
+def isIn(char, aStr):
+    middle = len(aStr) // 2
+    if char == aStr[middle]:
+        return True
+    elif char < aStr[middle]:
+        return isIn(char, aStr[0:middle])
+    else:
+        return isIn(char, aStr[middle:-1])
+    
+    
+print(isIn("t", "adfijkmnooty"))
+    
+            
